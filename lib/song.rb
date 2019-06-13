@@ -21,7 +21,7 @@ class Song
     column_names.compact
   end
 
-  self.column_names.each do |col_name|
+  self.column_names.each do |col_name| #merely creating the attr_accessors so it's not actually a method we're defining
     attr_accessor col_name.to_sym
   end
 
@@ -59,6 +59,3 @@ class Song
   end
 
 end
-
-
-
